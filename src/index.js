@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import axios from 'axios';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = 'http://rem-rest-api.herokuapp.com/api'
 
 ReactDOM.render(
   <React.StrictMode>
